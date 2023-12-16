@@ -71,24 +71,7 @@ function updateStatus(todo) {
 }
 
 
-function addTask() {
-    const taskName = document.getElementById('taskName').value;
-    const dueDate = document.getElementById('dueDate').value;
-    const priority = document.getElementById('priority').value;
 
-    const taskElement = document.createElement('div');
-    taskElement.className = 'task';
-    taskElement.innerHTML = `
-        <span><strong>Task Name:</strong> ${taskName}</span>
-        <span><strong>Due Date:</strong> ${dueDate}</span>
-        <span><strong>Priority:</strong> ${priority}</span>
-        <button class="editBtn">Edit</button>
-        <button class="deleteBtn">Delete</button>
-    `;
-
-    taskList.appendChild(taskElement);
-    taskForm.reset();
-}
 
 
  
